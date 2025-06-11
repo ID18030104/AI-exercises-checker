@@ -1,0 +1,13 @@
+URL: https://github.com/ID18030104/AI-exercises-checker/blob/main/S1/J2/DC01.py
+suggestions for improvement:
+- The code uses French in the prompts ('Entrez un mot...', 'Merci d'avoir utilisé...').  Consider changing this to English to match the challenge description.
+- Add a more informative error message when the input is not alphabetic. For example, instead of just 'Le mot doit contenir uniquement des lettres.', you could say 'Invalid input. Please enter a word containing only letters.'
+- The variable name `letter_positions` is slightly less descriptive. Consider renaming it to something like `letter_indices` for better clarity.
+- The code could benefit from a docstring explaining its purpose and functionality.
+- The `if not word.isalpha()` check can be improved by removing whitespace before the check. This handles edge cases where spaces are included.
+Brief justification:
+- correctness: The code correctly implements the core functionality described in the challenge. It takes user input, processes it to create a dictionary mapping letters to their indices, handles invalid input (non-alphabetic characters), and allows the user to quit.  The lists of indices are correctly constructed and the keys are strings, fulfilling all the core requirements. The only minor deviation is the language of the prompts and error messages.
+- readability: The code is generally readable but could be improved.  The use of French in prompts detracts slightly. More descriptive variable names and error messages would enhance readability.  A docstring would significantly improve understanding at a glance.  The explicit type casting `letter = str(letter)` is not strictly needed as `enumerate` already provides the letter as a string.  While not impacting correctness, it makes the code a bit less elegant.
+- performance: The algorithm used has a time complexity of O(n), where n is the length of the word. This is efficient for this task.  No unnecessary operations are performed, making it performant.
+- security: The code is secure. It handles invalid input gracefully preventing crashes and doesn't introduce any vulnerabilities.
+
