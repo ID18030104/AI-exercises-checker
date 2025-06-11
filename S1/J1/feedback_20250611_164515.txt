@@ -1,0 +1,13 @@
+URL: https://github.com/ID18030104/AI-exercises-checker/blob/main/S1/J1/expythoncours001.py
+suggestions for improvement:
+- Exercise 1: The code correctly prints the required output, but it could be more concise using a loop or string multiplication.
+- Exercise 5: The code uses lists instead of sets as requested.  Sets are crucial for demonstrating set operations (union, adding, removing without duplicates).
+- Exercise 6: While the code correctly identifies the immutability of tuples and handles the error, creating a new tuple by concatenation is less efficient than simply showing that append will raise an error.
+- Exercise 7: There are typos ('bluberry', 'instert') and the `remove` method doesn't handle multiple removals correctly.  It should be a loop or multiple calls to remove.
+- Exercise 8: The code correctly removes pastrami and makes sandwiches; however, it uses `lower()` unnecessarily within the loop, modifying string case.  It would be better to consistently use either lowercase or title case throughout.
+Brief justification:
+- correctness: Most exercises are correct, although some deviate from the instructions (Exercises 5, 7).  The core logic for loops, conditionals, data structures is generally sound except for the noted issues.  Exercise 6 correctly points out tuple immutability, but it doesn't follow best practice. Exercise 8 is mostly correct except for the unnecessary use of `lower()` which wasn't mentioned in the requirements and should be avoided to ensure accurate representation.
+- readability: The code is generally well-formatted and easy to follow.  The use of comments and clear variable names enhances readability. The unnecessary use of print statements to add separators could be improved. 
+- performance: The code's performance is generally good, with efficient use of data structures in most cases.  However, some inefficient operations are noted in the feedback.
+- security: There are no apparent security vulnerabilities in the provided code. The code only deals with user input and basic calculations; therefore, there's no exposure to external sources of risk. 
+
